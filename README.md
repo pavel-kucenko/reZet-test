@@ -73,7 +73,7 @@ function checkArr(arr) {
 ```
 [true, false, true]
 ```
-### Решение
+### Решение:
 ```
 function checkArr(arr) {
     let result = [];
