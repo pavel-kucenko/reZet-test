@@ -99,3 +99,4 @@ function checkArr(arr) {
 }
 console.log(checkArr([[1, 2, 3, 2, 7], [4, 5, 6, 8, 1], [7, 8, 9, 4, 5]])()); // [true, false, true]
 ```
+### Задачу 3 не смог решить(
