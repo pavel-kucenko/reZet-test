@@ -100,3 +100,41 @@ function checkArr(arr) {
 console.log(checkArr([[1, 2, 3, 2, 7], [4, 5, 6, 8, 1], [7, 8, 9, 4, 5]])()); // [true, false, true]
 ```
 ### Задачу 3 не смог решить(
+
+Вместо пробелов звездочки поставил для удобства
+
+```function format(arr) {
+
+    let result = [];
+
+    for (i=0; i < arr.length; i++) {
+        let str = arr[i].join(" ");
+        console.log(str);
+
+        if (str.length < 16) {
+            str = str.padEnd(16, "*");
+            result.push(str);
+        } else {
+            console.log(str);
+            a = str.slice(0, str.length/2);
+            b = str.slice(str.length/2)
+            a = a.padStart(16, "*")
+            b = b.padStart(16, "*")
+            console.log(a);
+            console.log(b);
+            result.push(a);
+            result.push(b);
+        }
+    }
+
+
+
+
+    return result;
+}
+
+const arr = [["Hello", "world"], ["Brad", "came", "to", "dinner", "with", "us"], ["He", "loves", "tacos"]];
+
+console.log(format(arr));
+```
+![alt](https://ibb.co/D1NgcWY)
